@@ -11,20 +11,20 @@ By **Sunday, November 29th, 2026 at 11:59pm**, you must fork this repository and
 # Your Task: The Boston Transit "Chaos Meter"
 Living in Boston, anyone who relies on the T knows the daily suspense of wondering whether your train is two minutes away or stuck in a tunnel indefinitely. As BU students, we understand the constant headache of the green line being down for service every few days. I want to use this technical assessment as a chance for you to build a live transit dashboard that brings a little order to the chaos!
 
-For this assessment, you will be building a Single Page Application (SPA) that visualizes real-time Boston transit data using the official MBTA V3 API ([https://api-v3.mbta.com](https://api-v3.mbta.com)). You can explore endpoints like /vehicles (live GPS coordinates and bearings), /routes (Red, Orange, Blue, Green, Silver, and Commuter Rail lines), /alerts (active delays and service disruptions), and /predictions (estimated arrival times). 
+For this assessment, you will be building a Single Page Application (SPA) that visualizes real-time Boston transit data using the official MBTA V3 API ([https://api-v3.mbta.com](https://api-v3.mbta.com)). You can explore endpoints like `/vehicles` (live GPS coordinates and bearings), `/routes` (Red, Orange, Blue, Green, Silver, and Commuter Rail lines), `/alerts` (active delays and service disruptions), and `/predictions` (estimated arrival times). 
 
 # Core Requirements
 Your app must include the following features:
 - The application should run on a single page without needing to reload the browser when switching between different views or tabs (e.g., Live Map, Service Alerts & Table, Line Analytics).
 - An interesting and polished UI with a catchy title, an apt description, cool fonts, and responsive styling that looks great on any screen size. Leaning into the iconic MBTA color palette (Red, Orange, Blue, Green, and Commuter Rail Purple) with smooth transitions or subtle animations is strongly encouraged!
-- Using React Leaflet (or a similar mapping library), render an interactive map centered on Greater Boston that displays live vehicle markers from the /vehicles endpoint. Clicking a vehicle marker should open a popup displaying details such as its route, direction, current status, and next stop.
+- Using React Leaflet (or a similar mapping library), render an interactive map centered on Greater Boston that displays live vehicle markers from the `/vehicles` endpoint. Clicking a vehicle marker should open a popup displaying details such as its route, direction, current status, and next stop.
 - Successfully fetch and render live data from the MBTA V3 API, including a search bar or filter controls (e.g., filtering by transit line, route, or stop name) and a manual refresh button or auto-refresh toggle.
 - Include at least one chart or graph (using libraries like Chart.js, Recharts, or D3) that visualizes insights pulled from the API—for example, a bar chart comparing active vehicles per subway line, a breakdown of active alerts by severity, or headway/delay trends.
 - Deploy the frontend (and backend, if applicable) using some of the free deployment tools we talked about in the workshops!
 
 # Extra Features
 If you want to go above and beyond, try implementing some or all of these features!
-- Query the /shapes endpoint to draw the actual subway or bus route lines onto your map beneath the live moving vehicles.
+- Query the `/shapes` endpoint to draw the actual subway or bus route lines onto your map beneath the live moving vehicles.
 - Instead of standard interval polling, leverage the MBTA V3 API's built-in Server-Sent Events (text/event-stream) support to stream live vehicle updates as they happen.
 - Add a backend (such as Node.js/Express with MongoDB or PostgreSQL) or local storage persistence so users can bookmark their daily commute stops and view a dedicated "My Commute" view with live arrival countdowns.
 
