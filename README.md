@@ -1,5 +1,9 @@
 # 🚂 Impact Team Technical Assessment Spring 2027 🚂
 
+<div align="center">
+<img width="813" height="228" alt="chaosmeter" src="https://github.com/user-attachments/assets/3b895059-9a8e-40ce-9161-d83c53dc20eb" />
+</div>
+
 Congratulations on reaching the next step of the application process! This phase is the most important one in the entire process, as it assesses your ability to create a web app using both tools you're familiar with and ones you probably aren't and will have to pick up as you go. This is one of the most important skills for a web developer to cultivate.   
 
 By **Sunday, November 29th, 2026 at 11:59pm**, you must fork this repository and submit a PR (pull request) to this repository with both your completed version of the app and a screen recording of you walking me through your app's features.
